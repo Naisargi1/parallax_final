@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+	   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	   <meta name="viewport" content="width=device-width, initial-scale=1">
+
+       <title>Naisargi DEsai</title>
+       <link rel="stylesheet" href="css/style.css"/>
+	   <script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
+	   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+	   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+       <link href='http://fonts.googleapis.com/css?family=Wellfleet' rel='stylesheet' type='text/css'>
+	   <link href='http://fonts.googleapis.com/css?family=Wellfleet' rel='stylesheet' type='text/css'>
+	   <link href='http://fonts.googleapis.com/css?family=Arvo:400,700,400italic,700italic' rel='stylesheet' type='text/css'>	
+	   <link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
+	   <link href='http://fonts.googleapis.com/css?family=Goudy+Bookletter+1911' rel='stylesheet' type='text/css'>
+	   <link href="css/responsive.css" rel="stylesheet">
+
+	<script>
+   
+<!----- JQUERY FOR SLIDING NAVIGATION --->   
+$(document).ready(function() {
+  $('a[href*=#]').each(function() {
+    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'')
+    && location.hostname == this.hostname
+    && this.hash.replace(/#/,'') ) {
+      var $targetId = $(this.hash), $targetAnchor = $('[name=' + this.hash.slice(1) +']');
+      var $target = $targetId.length ? $targetId : $targetAnchor.length ? $targetAnchor : false;
+       if ($target) {
+         var targetOffset = $target.offset().top;
+
+<!----- JQUERY CLICK FUNCTION REMOVE AND ADD CLASS "ACTIVE" + SCROLL TO THE #DIV--->   
+         $(this).click(function() {
+            $("#nav li a").removeClass("active");
+            $(this).addClass('active');
+           $('html, body').animate({scrollTop: targetOffset}, 1000);
+           return false;
+         });
+      }
+    }
+  });
+
+});
+
+
+</script>
+
+
+ </head> 
+	
+<body>
+
+<!--HEADER START-->   
+<a id="menu" class="header__menu">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+            <path d="M2 6h20v3H2zm0 5h20v3H2zm0 5h20v3H2z"></path>
+          </svg>
+        </a> 
+<header id="header">
+<div class="content">
+<div id="logo"><a href=""> Naisargi Desai</a></div>
+
+<nav id="nav">
+	<ul>
+		<li><a href="#home" class="active" title="Next Section" >Home</a></li>
+		<li><a href="#about" title="Next Section">About</a></li>
+		<li><a href="#skills" title="Next Section">Skills</a></li>
+		<li><a  href="#work" title="Next Section">Work</a></li>
+		<li><a href="#contact" title="Next Section">Contact</a></li>
+	</ul>
+</nav>
+</div>
+</header>	
+<!-- HEADER END-->   
+
+<!-- SLIDES START -->   	
+	<div id="home">
+		<div class="content">
+			
+            <p> <h1> Hello </h1></p>
+		    <h2>    I am Naisargi Desai.</h2><br>
+		    <br>
+		     <h3> I am a Front-End Developer </h3>
+           
+		</div> 
+    </div> 
+
+	<div id="about">
+		<div class="content" >
+            <div class="quotes_container">
+		    <!-- <h3 class="quotes">"I am a Possinate Web Designer. ”</h3> -->
+		  
+		</div> 
+		</div> 
+    </div> 
+	
+	
+   <div id="skills">
+		<div class="content">
+			<div class="col-md-4"><img src="img/html.png" class="img-responsive img-circle" width="200" height="300"> </div>
+			<!-- <div class="skillsBottom">
+	      		<div class="progress">
+	       			 <div class="html progress-bar progress-bar-info" role="progressbar">
+	       		 	 </div>
+	      		</div>
+	     	</div> -->
+			   <div class="col-md-4"><img src="img/css.jpg" class="img-responsive img-circle" width="200" height="300"> </div>
+			  
+			   <div class="col-md-4"><img src="img/js.jpg" class="img-responsive img-circle" width="200" height="300"></div>
+			   <div class="col-md-4"><img src="img/jquery.jpg" class="img-responsive img-circle" width="200" height="300"></div>
+			   <div class="col-md-4"><img src="img/bootstrap.jpg" class="img-responsive img-circle" width="200" height="300"></div>
+			   <div class="col-md-4"><img src="img/git.jpg" class="img-responsive img-circle" width="200" height="300"></div>
+
+		</div> 
+    </div> 
+	
+	
+	<div id="work">
+		<div class="content">
+              
+		</div> 
+		</div> 
+    </div> 
+	
+	
+	<div id="contact">
+		<div class="content">
+           <div class="quotes_container">
+				<a href="https://github.com/Naisargi1"><i class="fa fa-github fa-3x"></i></a>
+				<a href="https://www.facebook.com/naisargi111992"><i class="fa fa-facebook-official fa-3x"></i>
+				<a href="https://twitter.com/naisargi_112"><i class="fa fa-twitter-square fa-3x"></i></a>
+				<a href="https://www.linkedin.com/in/naisargidesai"><i class="fa fa-linkedin-square fa-3x"></i></a>
+		
+		</div> 
+		
+
+    </div> 
+	
+<!-- SLIDES END --->
+
+</body>
+</html>
