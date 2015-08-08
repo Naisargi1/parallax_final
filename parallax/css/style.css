@@ -96,16 +96,7 @@ a.rpanel:hover{ color: #fff; }
   margin: 50px auto;
 }
    
- .author_name_white { font-family:"Wellfleet";  margin: 70px 0 0 75px; color: #fff; font-size: 20px; }  
- .author_name_gray { font-family:"Wellfleet";  margin: 70px 0 0 75px; color: #94a4a4; font-size: 20px; }  
- .quotes_container { width: 800px; margin: 0 auto; }
-#christmas_tree { background: url('../img/christmas-tree.png')no-repeat; width: 48px; height: 77px; margin: 0 auto; position: relative; bottom: -35px;}
-#divider { background: url('../img/divider.png')no-repeat; width: 300px; height: 35px; margin: 0px auto 27px auto; }
-#ribbon { background: url('../img/ribbon.png')no-repeat; width: 251px; height: 48px; margin: 0 auto;  display: block; position: relative; top: -38px; }
-#snowflakes1 { background: url('../img/snowflakes.png')no-repeat; width: 24px; height: 21px; margin: 0 auto;  display: block; position: relative; bottom: -54px; left: -102px; }
-#snowflakes2 { background: url('../img/snowflakes.png')no-repeat; width: 24px; height: 21px; margin: 0 auto;  display: block; position: relative; bottom: -33px;  right: -100px; }
-
-
+ 
 
 /*= BUTTONS
 --------------------------------------------------------*/
@@ -133,9 +124,10 @@ ul.built { list-style: none; margin: 0 auto; width: 730px; }
 /*= SLIDES STYLING
 --------------------------------------------------------*/
 .home{
-	width:50%;
-	height:50%;
-	text-align: center;
+	
+	
+	
+	float:center;
 	font-family: 'Lobster', cursive;
 }
 #home, #about{ width: 100%; }
@@ -144,7 +136,7 @@ ul.built { list-style: none; margin: 0 auto; width: 730px; }
 	
 	background: #EDF0D3;
 	color: black;
-	height: 800px;
+	height: 1000px;
 	margin: 0;
 	padding: 200px 0 260px 0;
 	background-size: cover;
@@ -154,7 +146,7 @@ ul.built { list-style: none; margin: 0 auto; width: 730px; }
 
 	background-color: #fff;
 	color: black;
-	height: 800px;
+	height: 1000px;
 	margin: 0 auto;
 	overflow: hidden;
 	padding: 200px 0;
@@ -171,7 +163,7 @@ ul.built { list-style: none; margin: 0 auto; width: 730px; }
 #work{
 	background-color: #fff;
 	color: #333333;
-	height: 700px;
+	height: 1000px;
 	padding: 200px 0;
 }
 
@@ -225,3 +217,6 @@ ul.built { list-style: none; margin: 0 auto; width: 730px; }
    	-o-transition: width 4.50s ease !important;
    	transition: width 4.50s ease !important;
  }
+ i{
+	padding:10px;
+}
