@@ -2,11 +2,13 @@
     background: #eadead;
   float: center;
   padding:10px;
+ text-align: center;
   margin:3px;
   border-radius: 120px;
   height: 200px;
-  position: relative;
+  position:relative;
   width: 400px;
+
 }
 
 /*Initial ball state*/
