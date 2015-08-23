@@ -4,6 +4,7 @@ body{
 	margin: 0;
 	padding: 0;
 	width: 100%;
+	overflow-x:hidden;
 }
 
 h1 { 
@@ -37,22 +38,11 @@ h3 {
 	position: relative;
 }
 
-canvas[resize] {
-    width: 100%;
-    height: 100%;
-}
 
 
 .center { margin: 0 auto; }
-.content{ margin: 0 auto; width: 90%; }
-.clear { clear: both; }
-a.lpanel { float: left; color: #e1e1e1; font-size: 12px; font-family:"Wellfleet"; text-decoration: none; margin: 7px 11px; }
-a.rpanel { float: right; color: #e1e1e1;  font-size: 12px; font-family:"Wellfleet"; text-decoration: none; margin: 7px 11px; }
+.content{ margin: 0 auto; width: 100%; }
 
-a.lpanel:hover{ color: #fff; }
-a.rpanel:hover{ color: #fff; }
-/*= HEADER & NAVIGATION
---------------------------------------------------------*/
 
 #header { 
 	width: 100%; 
@@ -62,14 +52,9 @@ a.rpanel:hover{ color: #fff; }
 	margin-top: 30px;
 	margin-bottom: 100px;
 }
-#ts{
-	color: black;
-	font-weight: 200;
-	font-size: 35px;
-	padding-top:100px;
-	padding-bottom: 30px;
-	/*padding-bottom:40px;*/
-}
+
+
+
 #nav { width: 410px; float: right; margin-top: 20px; }
 #logo a { color: #fff; text-decoration: none; float: left; font-size: 30px; margin-top: 20px; color: #fff; font-family:"Wellfleet"; font-weight: bold; }
 #nav ul{
@@ -89,17 +74,6 @@ a.rpanel:hover{ color: #fff; }
 #nav li a.active { color: #fff; opacity:1; border-bottom: 2px solid #fff; }
 #nav li a:hover { color: #fff; opacity:1;  }
 
-
-
-/*= QUOTES AND SOME ELEMENTS
---------------------------------------------------------*/
-.quotes {   
- font-family: 'Goudy Bookletter 1911', serif;
-   font-weight: normal;
-   font-size: 30px;
-  text-align: left;
-  margin: 50px auto;
-}
   
 #workimg{
 	padding-top:105px;
@@ -111,10 +85,7 @@ a.rpanel:hover{ color: #fff; }
     -webkit-border-radius: 10px;
     border-radius: 10px;
 }
-    /*border-color: black;
-    border-width: 5px;
-    border-style: solid;
-}*/
+   
 #workdec{
 	font-family: 'Raleway', sans-serif;
 	font-size: 17px;
@@ -124,76 +95,49 @@ a.rpanel:hover{ color: #fff; }
 	
 
 }
-/*= BUTTONS
---------------------------------------------------------*/
 
-button.btn-know { 
-	padding: 15px 47px; 
-	margin: 40px 38.8%;
-	text-align: center;
-	border: 4px solid #fff; 
-	color: #fff; 
-	background: transparent; 
-	font-size: 19px;
-	cursor: pointer;
-	text-shadow: -1px 2px 0px rgba(90, 90, 90, 0.56);
-	-webkit-border-radius: 4px;
-	border-radius: 4px;
-}
-
-.btn-know:hover { background: #fff; color: transparent; }
-ul.built { list-style: none; margin: 0 auto; width: 730px; }
-.built li img{ float: left; padding-right: 34px; }
-
-
-
-/*= SLIDES STYLING
---------------------------------------------------------*/
-.home{
+/*.home{
 	
 	
 	
 	float:center;
 	font-family: 'Lobster', cursive;
-}
-#home, #about{ width: 100%; }
+}*/
+#home, #work,#skills,#contact{ width: 100%; overflow-x:hidden;}
 #home{
-	/*background:url('../img/slide1.jpg') 50% 0 no-repeat fixed;*/
+	
 	
 	background: #EDF0D3;
 	color: black;
 	height: 1000px;
 	margin: 0;
 	padding: 200px 0 260px 0;
-	background-size: cover;
+
+	/*background-size: cover;*/
+	
 }
 
-#about{
-
-	background-color: #fff;
-	color: black;
-	height: 1000px;
-	margin: 0 auto;
-	overflow: hidden;
-	padding: 200px 0;
-}
 
 #skills{
 	background: #B5DBE8;
-	color: #fff;
-	height: 1000px;
-	padding: 170px 0 0 0;	
-	background-size: cover;
+	color:black;
+	
+	
+	width: 100%;	
+	/*background-size: cover;*/
 }
 
 #work{
 	
 	background-color:#E8CEC5;
 	color: #333333;
-	height: 1200px;
+	min-height: 1200px;
 	padding: 100px 0;
-	background-size: cover;
+	overflow: auto;
+	width: 100%;
+	/*background-size: cover;*/
 	display: block;
+	
 	
 
 }
@@ -207,17 +151,6 @@ ul.built { list-style: none; margin: 0 auto; width: 730px; }
 	background-size: cover;
 }
 
-.hello{
-	font-family: 'Lobster', cursive;	
-	-webkit-transition: width 20s; /* For Safari 3.1 to 6.0 */
-    transition: font-size 3s;
-}
-.hello:hover{
-	color: red;
-	font-size: 100px;
-}
-/*= FOOTER 
---------------------------------------------------------*/
 
 #copyright  { color: #fff; font-family:"Wellfleet";  font-size: 14px; margin-top: 100px; text-align: center;  }
 #copyright  a { text-decoration: none; color: #fff;  }
@@ -228,17 +161,17 @@ ul.built { list-style: none; margin: 0 auto; width: 730px; }
 	margin: 20px 0px 30px 30px;
 }
 
-.skillsTop {
+/*.skillsTop {
 	float: left;
 	/*clear: right;*/
-	color:black;
+	/*color:black;
 	width: 20%;
 	margin: 5px;
 	text-align: left;
-	font-weight: 100;
+	
   font-family: 'Raleway', sans-serif;
   font-weight: 200;
-}
+}*/
 
 .skillsBottom {
 	float: left;
@@ -287,49 +220,8 @@ ul.built { list-style: none; margin: 0 auto; width: 730px; }
 	padding:10px;
 }
 @import url(http://fonts.googleapis.com/css?family=Lato:400,900|Montez);
+/*
 
-body {
-  background-image: url('http://site-blogmanager.com/background.jpg');
-  background-repeat: no-repeat;
-  background-position: top center;
-  background-size: cover;
-  width: 100%;
-  height: 100%;
-  min-height: 650px;
-  font-family: Raleway;
-  text-align: center;
-  color: #fff;
-  overflow: hidden;
-}
-
-a {
-  color: #fff;
-  font-family: Raleway;
-  font-style: normal;
-  text-decoration: none;
-  font-size: 15px;
-}
-
-a:hover {
-  text-decoration: underline;
-}
-
-h1 {
-  font-family: Raleway;
-  font-weight: normal;
-  margin: 0;
-}
-
-#container {
-  display: block;
-  margin: 0 auto;
-  text-align: center;
-  -webkit-perspective: 2000px;
-     -moz-perspective: 2000px;
-      -ms-perspective: 2000px;
-       -o-perspective: 2000px;
-          perspective: 2000px;
-}
   
   #information {
     margin-top: 1em;
@@ -350,7 +242,7 @@ h1 {
   
     #itemdescription span {
       display: none;
-    }
+    }*/
 
   #itemlist {
     display: block;
@@ -364,27 +256,17 @@ h1 {
             transform-style: preserve-3d;
   }
   
-  #green, #red, #blue, #purple {
+  /*#green, #red, #blue, #purple {
     position: absolute;
     cursor: pointer;
-    left: 0;
+    margin-left: auto;
+    margin-right: auto;
     box-shadow: 0px 15px 50px rgba(0,0,0,0.4);
     width: 600px;
-    height: 655px;
-  }
+    height: 600px;
+  }*/
 
-#green {
-  background: rgb(87, 190, 95);
-}
-#red {
-  background: rgb(190, 87, 87);
-}
-#blue {
-  background: rgb(87, 190, 190);
-}
-#purple {
-  background: rgb(190, 87, 190);
-}
+
   
     #green:hover, #red:hover, #blue:hover, #purple:hover {
       top: -5px;
