@@ -49,6 +49,7 @@ h3 {
 	background: url('../img/header-bg.png'); 
 	height: 80px; 	
 	position: fixed;
+	z-index: 9999;
 	margin-top: 30px;
 	margin-bottom: 100px;
 }
@@ -56,7 +57,7 @@ h3 {
 
 
 #nav { width: 50%px; float: right; margin-top: 20px; }
-#logo a { color: #fff; text-decoration: none; float: left; font-size: 30px; margin-top: 20px; color: #fff; font-family:"Wellfleet"; font-weight: bold; }
+#logo a { color: #97a8cf; text-decoration: none; float: left; font-size: 30px; margin-top: 20px; color: #fff; font-family:"Wellfleet"; font-weight: bold; }
 #nav ul{
 	list-style: none;
 	display: block;
@@ -77,24 +78,24 @@ h3 {
   
 #workimg{
 	padding-top:105px;
+	margin-right: auto;
+	margin-left: auto;
 }   
  img{
- 	width: 300px;
- 	height:200px;
+ 	width: 400px;
+ 	height:270px;
  	-moz-border-radius: 10px;
     -webkit-border-radius: 10px;
     border-radius: 10px;
+    margin-right: auto;
+	margin-left: auto;
 }
-   
-#workdec{
-	font-family: 'Raleway', sans-serif;
-	font-size: 17px;
-	padding-left: 50px;
-	padding-top:50px;
-	
-	
+   #blue,#green, #red,  #purple{
+   	-moz-border-radius: 50px;
+    -webkit-border-radius: 50px;
+    border-radius: 50px;
+   }
 
-}
 
 /*.home{
 	
@@ -107,7 +108,7 @@ h3 {
 #home{
 	
 	
-	background: #EDF0D3;
+	background-image: url('../img/home.png');
 	color: black;
 	height: 1000px;
 	margin: 0;
@@ -119,8 +120,8 @@ h3 {
 
 
 #skills{
-	background: #B5DBE8;
-	color:black;
+	background-image: url('../img/skill.png');
+	color:#fff;
 	
 	
 	width: 100%;	
@@ -129,30 +130,31 @@ h3 {
 
 #work{
 	
-	background-color:#E8CEC5;
-	color: #333333;
+	background-image: url('../img/home.png');
+	color: #fff;
 	min-height: 1200px;
-	padding: 100px 0;
+	/*padding: 100px 0;*/
 	overflow: auto;
 	width: 100%;
 	/*background-size: cover;*/
-	display: block;
+	
 	
 	
 
 }
 
 #contact{
-	background: #C2E8B5;
-	height: 100px;
+	background-image: url('../img/skill.png');
+	height: 300px;
 	margin: 0 auto;
-	padding: 250px 0;
+	padding: 50px 0;
 	color: #fff;
-	background-size: cover;
+	overflow:hidden;
+	/*background-size: cover;*/
 }
 
 
-#copyright  { color: #fff; font-family:"Wellfleet";  font-size: 14px; margin-top: 100px; text-align: center;  }
+#copyright  { color: #fff; font-family: 'Raleway', sans-serif;  font-size: 14px; margin-top: 100px; text-align: center;  }
 #copyright  a { text-decoration: none; color: #fff;  }
 
 
@@ -176,22 +178,22 @@ h3 {
 }
 
 .progress {
-	background:#e9e5e2; 
+	background:#fff; 
 	height:22px; 
-  -moz-box-shadow: 0 1px 0px #bebbb9 inset, 0 1px 0 #fcfcfc;
-  -webkit-box-shadow: 0 1px 0px #bebbb9 inset, 0 1px 0    #fcfcfc;	 
-	box-shadow: 0 1px 0px #bbbbbb inset, 0 1px 0 #fcfcfc;	  
+  -moz-box-shadow: 0 1px 0px #6388dc inset, 0 1px 0 #fcfcfc;
+  -webkit-box-shadow: 0 1px 0px #63759d inset, 0 1px 0    #6388dc;	 
+	box-shadow: 0 1px 0px #6388dc inset, 0 1px 0 #63759d;	  
 }
 
 .progress-bar {
-  background-image: -webkit-linear-gradient(left, #FF7F50 0%,
-    #FE7D7D 100%);
-  background-image: -moz-linear-gradient(left, #FF7F50 0%,
-    #FE7D7D 100%);
-  background-image: -o-linear-gradient(left, #FF7F50 0%,
-    #FE7D7D 100%);
-  background-image: linear-gradient(to right, #FF7F50 0%,
-    #FE7D7D 100%);
+  background-image: -webkit-linear-gradient(left, #63759d 0%,
+    #6388dc 100%);
+  background-image: -moz-linear-gradient(left, #63759d 0%,
+    #6388dc 100%);
+  background-image: -o-linear-gradient(left, #63759d 0%,
+    #6388dc 100%);
+  background-image: linear-gradient(to right,#63759d 0%,
+    #6388dc 100%);
 	height:100%;
 	width:0%;
 }
